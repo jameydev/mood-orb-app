@@ -1,20 +1,10 @@
 import React from 'react';
 import MoodOrb from '../components/MoodOrb';
 
-const Home: React.FC = () => {
+export default function Home() {
   return (
-    <div
-      style={{
-        display: 'flex',
-        justifyContent: 'center',
-        alignItems: 'center',
-        height: '100vh',
-        backgroundColor: 'black',
-      }}
-    >
+    <div className='flex justify-center items-center min-h-screen bg-gray-900'>
       <MoodOrb />
     </div>
   );
-};
-
-export default Home;
+}
